@@ -60,7 +60,7 @@ taskflow-api/
 ### 1. Clone the repository
 
 bash
-git clone https://github.com/yourusername/taskflow-api.git
+git clone https://github.com/akshatmhjj/taskflow-api.git
 cd taskflow-api
 `
 
@@ -123,25 +123,6 @@ npm start
 | GET    | /tasks/\:id/comments | Get all comments for a task |
 | POST   | /tasks/\:id/comments | Add a comment to a task     |
 
-## 📱 Mobile-Optimized API Responses
-
-To support efficient data loading on mobile and low-bandwidth clients, the following endpoints accept a `?compact=true` query parameter. This returns lightweight, trimmed-down responses with only the most essential fields.
-
----
-
-### 🔹 `GET /projects?compact=true`
-
-**Purpose:** Fetch a lightweight list of all projects.
-
-**Sample Response:**
-``` json
-{
-  "data": [
-    { "id": 1, "name": "Marketing Site Redesign" },
-    { "id": 2, "name": "Mobile App v2" }
-  ]
-} 
-
 ---
 
 ## 🧪 Testing the API
@@ -171,3 +152,23 @@ json
 * Designed to be extended into full-stack or mobile projects.
 
 ---
+
+## 📱 Mobile-Optimized API Responses
+
+To support efficient data loading on mobile and low-bandwidth clients, the following endpoints accept a `?compact=true` query parameter. This returns lightweight, trimmed-down responses with only the most essential fields.
+
+---
+
+### 🔹 `GET /projects?compact=true`
+
+**Purpose:** Fetch a lightweight list of all projects.
+
+**Sample Response:**
+```json
+{
+  "data": [
+    { "id": 1, "name": "Marketing Site Redesign" },
+    { "id": 2, "name": "Mobile App v2" }
+  ]
+}
+
