@@ -101,27 +101,46 @@ npm start
 
 | Method | Endpoint                           | Description                     |
 | ------ | ---------------------------------- | ------------------------------- |
-| GET    | /api/v1/users                      | Get all users                   |
-| POST   | /api/v1/users                      | Create a new user               |
-| GET    | /api/v1/users/project/\:id/members | Get users assigned to a project |
+| GET    | /users                      | Get all users                   |
+| POST   | /users                      | Create a new user               |
+| GET    | /users/project/\:id/members | Get users assigned to a project |
 
 ### Projects
 
 | Method | Endpoint                        | Description                 |
 | ------ | ------------------------------- | --------------------------- |
-| GET    | /api/v1/projects                | Get all projects            |
-| GET    | /api/v1/projects/\:id           | Get a specific project      |
-| POST   | /api/v1/projects                | Create a new project        |
-| GET    | /api/v1/projects/\:id/analytics | Get analytics for a project |
+| GET    | /projects                | Get all projects            |
+| GET    | /projects/\:id           | Get a specific project      |
+| POST   | /projects                | Create a new project        |
+| GET    | /projects/\:id/analytics | Get analytics for a project |
 
 ### Tasks
 
 | Method | Endpoint                    | Description                 |
 | ------ | --------------------------- | --------------------------- |
-| GET    | /api/v1/tasks/\:id          | Get task details            |
-| POST   | /api/v1/tasks               | Create a new task           |
-| GET    | /api/v1/tasks/\:id/comments | Get all comments for a task |
-| POST   | /api/v1/tasks/\:id/comments | Add a comment to a task     |
+| GET    | /tasks/\:id          | Get task details            |
+| POST   | /tasks               | Create a new task           |
+| GET    | /tasks/\:id/comments | Get all comments for a task |
+| POST   | /tasks/\:id/comments | Add a comment to a task     |
+
+## 📱 Mobile-Optimized API Responses
+
+To support efficient data loading on mobile and low-bandwidth clients, the following endpoints accept a `?compact=true` query parameter. This returns lightweight, trimmed-down responses with only the most essential fields.
+
+---
+
+### 🔹 `GET /projects?compact=true`
+
+**Purpose:** Fetch a lightweight list of all projects.
+
+**Sample Response:**
+``` json
+{
+  "data": [
+    { "id": 1, "name": "Marketing Site Redesign" },
+    { "id": 2, "name": "Mobile App v2" }
+  ]
+} 
 
 ---
 
