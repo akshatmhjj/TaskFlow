@@ -164,11 +164,17 @@ To support efficient data loading on mobile and low-bandwidth clients, the follo
 **Purpose:** Fetch a lightweight list of all projects.
 
 **Sample Response:**
-```json
-{
-  "data": [
-    { "id": 1, "name": "Marketing Site Redesign" },
-    { "id": 2, "name": "Mobile App v2" }
-  ]
-}
+
+> {
+>   "data": [
+>     { "id": 1, "name": "Marketing Site Redesign" },
+>     { "id": 2, "name": "Mobile App v2" }
+>   ]
+> }
+
+
+---
+
+**Author:** akshatmhjj
+**Repo:** [Edu-Track](https://github.com/akshatmhjj/EduTrack)
 
