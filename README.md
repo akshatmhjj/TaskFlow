@@ -130,7 +130,7 @@ npm start
 Use Postman or Thunder Client in VS Code to test the endpoints:
 
 1. Start the server: `npm start`
-2. Send requests to: `http://localhost:3000/api/v1/...`
+2. Send requests to: `http://localhost:3000/...`
 3. Use `Content-Type: application/json` for POST requests
 
 Example POST body for creating a user:
@@ -147,7 +147,7 @@ json
 ## 📌 Notes
 
 * Project member assignment is done manually via SQL (or you can build a dedicated endpoint).
-* This backend is versioned (`/api/v1/`) for scalability.
+* This backend is versioned (`/`) for scalability.
 * No authentication system is included in this version.
 * Designed to be extended into full-stack or mobile projects.
 
